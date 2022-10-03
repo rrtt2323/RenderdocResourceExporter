@@ -5,5 +5,5 @@
     "minimum_renderdoc": "1.2",
     "description": "Used to export the resources captured by Renderdoc \n-------------------------------- \n用于导出 Renderdoc 捕获的资源",
     "author": "rrtt_2323 <rrtt_2323@163.com>",
-    "url": "https://blog.csdn.net/WPAPA?spm=1000.2115.3001.5343"
+    "url": "https://github.com/rrtt2323/RenderdocResourceExporter"
 }
