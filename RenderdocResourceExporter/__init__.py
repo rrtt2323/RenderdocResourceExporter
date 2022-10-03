@@ -12,7 +12,6 @@ from .qt_utilities.root_const_mapper import RootConstMapper as RCM
 from .fbx_res.fbx_export_option_dialog import FbxExportOptionDialog
 from .fbx_res.mesh_to_csv import MeshToCsv
 from .fbx_res.csv_to_fbx import CsvToFbx
-from .fbx_res.fbx_ascii_exporter import FbxAsciiExporter
 
 
 # 注册入口
@@ -65,11 +64,6 @@ def ExportFbx(pyrenderdoc_, data_):
     if len(rows) <=1 and len(columns) <= 2:
         emgr.ErrorDialog(RCM.get_text(RCM.c_not_mesh_data), 'Error!!!')
         return
-
-    # 阻塞式导出 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-    # 导出ASCII格式的FBX
-    # pyrenderdoc_.Replay().BlockInvoke(FbxAsciiExporter.export_fbx(fbx_save_path, dialog.mapper, table))
 
     # 导出CSV数据表
     meshToCsv = MeshToCsv(emgr)
