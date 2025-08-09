@@ -55,7 +55,7 @@ def ExportFbx(pyrenderdoc_, data_):
 
     # 直接从 QTableView 界面获取数据
     main_window = pyrenderdoc_.GetMainWindow().Widget()
-    table = main_window.findChild(QtWidgets.QTableView, 'vsinData')
+    table = main_window.findChild(QtWidgets.QTableView, 'inTable')
     model = table.model()
     row_count = model.rowCount()
     column_count = model.columnCount()
